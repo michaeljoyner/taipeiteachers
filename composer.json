@@ -4,15 +4,6 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../secretary",
-            "options": {
-                "symlink": true
-            }
-        }
-    ],
     "require": {
         "php": ">=7.0.0",
         "dymantic/secretary": "dev-master",
