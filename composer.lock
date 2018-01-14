@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "77ee4659ab649e70d80eb7f31c887b1e",
-    "content-hash": "d4078da0ddb5213d03a796a538c0639c",
+    "hash": "5829713b72d897e3b5bf5a4b8f39e5df",
+    "content-hash": "250e7474a115c42d75f17a9f4092acc3",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -163,28 +163,39 @@
         },
         {
             "name": "dymantic/secretary",
-            "version": "dev-master",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dymantic/secretary.git",
+                "reference": "b8bc7efae75af05878d362bc6b23ab4a980d9bdc"
+            },
             "dist": {
-                "type": "path",
-                "url": "../secretary",
-                "reference": "7f2b790eb9692ddb120ccbde4006e09aedea53fd",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dymantic/secretary/zipball/b8bc7efae75af05878d362bc6b23ab4a980d9bdc",
+                "reference": "b8bc7efae75af05878d362bc6b23ab4a980d9bdc",
+                "shasum": ""
             },
             "require-dev": {
                 "orchestra/testbench": "^3.5",
                 "phpunit/phpunit": "^6.5"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dymantic\\Secretary\\SecretaryServiceProvider"
+                    ],
+                    "aliases": {
+                        "Secretary": "Dymantic\\Secretary\\Facades\\Secretary"
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Dymantic\\Secretary\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Dymantic\\Secretary\\Tests\\": "tests"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -195,9 +206,7 @@
                 }
             ],
             "description": "Message and notification system for basic admin sections. It handles contact forms.",
-            "transport-options": {
-                "symlink": true
-            }
+            "time": "2018-01-12 02:52:28"
         },
         {
             "name": "egulias/email-validator",
@@ -4180,9 +4189,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dymantic/secretary": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
