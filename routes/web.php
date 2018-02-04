@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return 'Hello there...';
-});
+Route::view('/', 'front.home.page');
+Route::get('schools', 'SchoolsMapController@show');
+
+
 
 $this->get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');
 $this->post('admin/login', 'Auth\LoginController@login');
@@ -24,13 +25,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
 
     Route::group(['middleware' => 'auth'], function() {
 
-        Route::get('/', function() {
-            return redirect('/admin/schools');
-        });
+        Route::redirect('/', '/admin/schools');
 
-        Route::get('schools/search', function() {
-            return view('admin.schools.search');
-        });
+        Route::view('schools/search', 'admin.schools.search');
 
         Route::get('schools', 'SchoolsController@index');
         Route::get('schools/{school}', 'SchoolsController@show');
@@ -38,11 +35,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
         Route::post('schools/{school}', 'SchoolsController@update');
         Route::delete('schools/{school}', 'SchoolsController@delete');
 
-        Route::get('school-form', function() {
-            return view('admin.schools.show');
-        });
+        Route::post('schools/{school}/image', 'SchoolImageController@store');
+        Route::delete('schools/{school}/image', 'SchoolImageController@delete');
 
-        
     });
 
 });

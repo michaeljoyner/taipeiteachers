@@ -12,15 +12,18 @@
     "devDependencies": {
         "axios": "^0.17",
         "bootstrap-sass": "^3.3.7",
-        "cross-env": "^5.1",
-        "jquery": "^3.2",
-        "laravel-mix": "^1.0",
+        "cross-env": "^5.1.3",
+        "jquery": "^3.3.1",
+        "laravel-mix": "^1.7.2",
         "lodash": "^4.17.4",
         "tailwindcss": "^0.3.0",
-        "vue": "^2.5.7"
+        "vue": "^2.5.13"
     },
     "dependencies": {
+        "@dymantic/imagineer": "^0.1.0",
         "@dymantic/vue-forms": "^0.1.1",
-        "geolib": "^2.0.24"
+        "@dymantic/vuetilities": "0.0.15",
+        "geolib": "^2.0.24",
+        "js-marker-clusterer": "^1.0.0"
     }
 }

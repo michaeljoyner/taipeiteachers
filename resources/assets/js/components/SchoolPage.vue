@@ -9,6 +9,10 @@
                              :form-attributes="school"
                              @update-submitted="updateSchool"
                 ></school-form>
+                <delete-modal :delete-url="`/admin/schools/${school.id}`"
+                              :resource-name="school.name"
+                >
+                </delete-modal>
             </div>
         </div>
         <section class="flex justify-between">
@@ -21,8 +25,13 @@
                 <p class="mb-2"><strong class="block text-green-light">City: </strong>{{ school.city }}</p>
             </div>
             <div class="w-1/2 flex justify-center items-center p-4">
-                <img :src="school_photo"
-                     alt="" class="max-w-full">
+                <image-upload :upload-url="`/admin/schools/${school.id}/image`"
+                              :delete-url="`/admin/schools/${school.id}/image`"
+                              :initial-src="school.main_image.thumb"
+                              :aspect-x="1"
+                              :aspect-y="1"
+                              class="w-3/5 mx-auto"
+                ></image-upload>
             </div>
 
         </section>
@@ -41,7 +50,7 @@
 
         computed: {
             school_photo() {
-                if(this.school.photo_url) {
+                if (this.school.photo_url) {
                     return this.school.photo_url;
                 }
 
@@ -52,7 +61,7 @@
         methods: {
             updateSchool(updated_data) {
                 Object.keys(updated_data).forEach(field => {
-                    if(this.school.hasOwnProperty(field)) {
+                    if (this.school.hasOwnProperty(field)) {
                         this.school[field] = updated_data[field];
                     }
                 });

@@ -4,7 +4,7 @@
                 @click="modalOpen = true">{{ buttonText }}</button>
         <modal :show="modalOpen">
             <div slot="header"></div>
-            <div slot="body">
+            <div slot="body" class="p-4">
                 <form action=""
                       @submit.prevent="submit">
                     <div class="form-group my-3"

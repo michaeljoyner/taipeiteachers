@@ -23,8 +23,8 @@ class CreateSchoolsTable extends Migration
             $table->string('website')->nullable();
             $table->string('photo_url')->nullable();
             $table->string('contact_person')->nullable();
-            $table->float('latitude');
-            $table->float('longitude');
+            $table->float('latitude', 8, 4);
+            $table->float('longitude', 8, 4);
             $table->timestamps();
         });
     }

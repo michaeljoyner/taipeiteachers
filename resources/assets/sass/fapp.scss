@@ -1,0 +1,15 @@
+
+@tailwind preflight;
+
+@tailwind utilities;
+
+.banner {
+  height: 40vw;
+  background-image: url(../images/banners/taipei_map_5.png);
+  background-size: cover;
+  background-position: 0 50%;
+
+  svg {
+    margin-bottom: -1.4rem;
+  }
+}

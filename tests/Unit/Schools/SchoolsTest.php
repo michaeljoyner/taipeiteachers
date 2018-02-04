@@ -4,6 +4,7 @@ namespace Tests\Unit\Schools;
 
 use App\Schools\School;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Http\UploadedFile;
 use Tests\TestCase;
 
 class SchoolsTest extends TestCase
@@ -28,6 +29,8 @@ class SchoolsTest extends TestCase
             'contact_person' => 'joe soap'
         ]);
 
+        $image = $school->addImage(UploadedFile::fake()->image('testpic.jpg'));
+
         $expected = [
             'id'             => $school->id,
             'name'           => 'TEST SCHOOL NAME',
@@ -40,7 +43,11 @@ class SchoolsTest extends TestCase
             'latitude'       => 66,
             'longitude'      => 66,
             'latLng'         => ['lat' => 66, 'lng' => 66],
-            'contact_person' => 'joe soap'
+            'contact_person' => 'joe soap',
+            'main_image' => [
+                'thumb' => $image->getUrl('thumb'),
+                'original' => $image->getUrl()
+            ]
         ];
 
         $jsonable_array = $school->toJsonableArray();

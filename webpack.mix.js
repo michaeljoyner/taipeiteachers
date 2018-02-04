@@ -14,6 +14,8 @@ let tailwindcss = require('tailwindcss');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
+   .js('resources/assets/js/fapp.js', 'public/js')
+   .sass('resources/assets/sass/fapp.scss', 'public/css')
    .options({
        processCssUrls: false,
        postCss: [tailwindcss('tailwind.js')],
