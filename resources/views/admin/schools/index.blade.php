@@ -11,7 +11,7 @@
         @foreach($schools as $school)
             <div class="flex justify-between bg-grey-lighter my-2 h-32">
                 <div class="w-1/5 overflow-hidden">
-                    <img src="{{ $school->photo_url ?: '/images/defaults/school.png' }}"
+                    <img src="{{ $school->imageUrl('thumb') ?: '/images/defaults/school.png' }}"
                          alt=""
                          class="w-full">
                 </div>
