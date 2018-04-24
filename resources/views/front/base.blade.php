@@ -8,18 +8,21 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ mix('css/fapp.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('head')
 </head>
-<body  class="{{ $pageName ?? '' }} font-sans flex flex-column min-h-100">
+<body  class="{{ $pageName ?? '' }} font-sans flex flex-column min-h-100 pt-12">
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
 <div id="app" class="flex-auto">
     @include('front.partials.navbar')
     @yield('content')
+    <footer class="h-64 bg-site-secondary flex justify-center items-center">
+        <p class="text-5xl text-site-primary font-black">taipeiteachers.com</p>
+    </footer>
 </div>
 {{--@include('front.partials.footer')--}}
 

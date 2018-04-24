@@ -12,7 +12,9 @@
 */
 
 Route::view('/', 'front.home.page');
-Route::get('schools', 'SchoolsMapController@show');
+Route::view('/new-teachers', 'front.new-teachers.page');
+Route::view('/experienced-teachers', 'front.old-teachers.page');
+Route::view('/schools', 'front.schools.page');
 
 
 

@@ -1,15 +1,44 @@
-
 @tailwind preflight;
+
+.btn {
+  @apply .no-underline .py-1 px-2 .text-center .uppercase .tracking-wide font-bold font-cursive;
+}
+
+.btn-block {
+  @apply .w-64 .block .mx-auto;
+}
+
+.btn-primary {
+  @apply .text-site-primary .border-2 .border-site-primary;
+}
+
+.btn-white {
+  @apply .text-white .border-2 .border-white;
+}
 
 @tailwind utilities;
 
-.banner {
-  height: 40vw;
-  background-image: url(../images/banners/taipei_map_5.png);
-  background-size: cover;
-  background-position: 0 50%;
+.overlap-b {
+  transform: translate3d(-50%, 50%, 0);
+  left: 50%;
+}
 
-  svg {
-    margin-bottom: -1.4rem;
+.has-dropdown {
+  position: relative;
+  .dropdown {
+    position: absolute;
+    transition: 0.3s;
+    width: 250px;
+    top: 100%;
+    left: 50%;
+    transform-origin: top;
+    transform: translateX(-50%) rotateX(90deg);
+  }
+
+  &:hover {
+    .dropdown {
+      z-index: 50;
+      transform: translateX(-50%) rotateX(0deg);
+    }
   }
 }
