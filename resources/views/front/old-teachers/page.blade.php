@@ -1,7 +1,7 @@
 @extends('front.base')
 
 @section('content')
-<section class="pb-28 pt-40">
+<section class="pb-28 pt-40 px-4 md:px-0">
     <h1 class="text-4xl max-w-xl mx-auto text-site-secondary font-cursive">Better ESL Jobs for Current ESL Teachers</h1>
     <section>
         <h3 class="my-20 text-2xl max-w-xl mx-auto text-site-secondary font-cursive">Are you happy with your current ESL job?</h3>
@@ -29,6 +29,7 @@
         <p class="max-w-lg text-lg text-site-secondary my-8 mx-auto">
         Taipeiteachers.com will soon be rolling out a platform that helps foreign teachers get notified about jobs that suit suit them, based on factors such as job type, location, and salary. If you’re serious about moving to Taipei and would like to get notified for ESL job openings, just leave your email below and we’ll get back to you soon.
         </p>
+        <email-signup url="/test-yes"></email-signup>
     </section>
     <p class="my-28 pl-8 border-l-4 max-w-lg mx-auto border-site-secondary text-4xl text-grey-darker">"A happy teacher is a good teacher, the other is a heck of a creature."</p>
 </section>

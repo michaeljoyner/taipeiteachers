@@ -11,10 +11,23 @@
 |
 */
 
+Route::post('test-yes', function() {
+    sleep(2);
+    if(str_contains(request('email'), 'mooz')) {
+        return 'ok';
+    }
+    return abort(400);
+});
+
+Route::post('test-no', function() {
+    return abort(505);
+});
+
 Route::view('/', 'front.home.page');
 Route::view('/new-teachers', 'front.new-teachers.page');
 Route::view('/experienced-teachers', 'front.old-teachers.page');
 Route::view('/schools', 'front.schools.page');
+Route::view('/faqs', 'front.faqs.page');
 
 
 

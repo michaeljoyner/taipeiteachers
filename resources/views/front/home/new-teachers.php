@@ -1,4 +1,4 @@
-<section class="pb-28 pt-40">
+<section class="pb-28 pt-40 px-4 md:px-0">
     <h2 class="text-4xl max-w-xl mx-auto text-site-secondary font-cursive">First time teacher? We'll help you land on your feet.</h2>
     <p class="max-w-lg text-lg text-site-secondary mt-20 mx-auto">
     Thinking about teaching ESL in Taiwan? Read our breakdown of the different the job types, their salaries, what you can expect from each job and how to get the job. Still, you probably have a ton of <a href="#" class="text-site-primary">questions</a>. We may just have the <a href="" class="text-site-primary">answers</a>, and if we don't just <a href="" class="text-site-primary">ask</a>. We have been in you shoes before.

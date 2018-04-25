@@ -16,6 +16,10 @@
   @apply .text-white .border-2 .border-white;
 }
 
+@import "front/animations";
+@import "front/vue-transitions";
+@import "front/navbar";
+
 @tailwind utilities;
 
 .overlap-b {

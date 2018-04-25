@@ -1,33 +1,38 @@
-window.axios = require('axios');
+window.axios = require("axios");
 
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 
 let token = document.head.querySelector('meta[name="csrf-token"]');
 if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+  window.axios.defaults.headers.common["X-CSRF-TOKEN"] = token.content;
 } else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+  console.error(
+    "CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token"
+  );
 }
 
-window.Vue = require('vue');
+window.Vue = require("vue");
 
-
-Vue.component('schools-map', require('./components/SchoolsMap'));
+Vue.component("email-signup", require("./components/EmailSignup"));
 
 window.eventHub = new Vue();
 
 const app = new Vue({
-    el: '#app'
+  el: "#app"
 });
 
-window.initMaps = (ev) => eventHub.$emit('maps-loaded');
+window.initMaps = ev => eventHub.$emit("maps-loaded");
 
-document.body.addEventListener('keyup', (ev) => {
+document.body.addEventListener(
+  "keyup",
+  ev => {
     switch (ev.keyCode) {
-        case 27:
-            eventHub.$emit('KEY_ESC');
-            break;
-        default:
-            break;
+      case 27:
+        eventHub.$emit("KEY_ESC");
+        break;
+      default:
+        break;
     }
-}, false);
+  },
+  false
+);

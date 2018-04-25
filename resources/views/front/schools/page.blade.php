@@ -1,7 +1,7 @@
 @extends('front.base')
 
 @section('content')
-<section class="pb-28 pt-40">
+<section class="pb-28 pt-40 px-4 md:px-0">
     <h1 class="text-4xl max-w-xl mx-auto text-site-secondary font-cursive">Find the right teacher for your school</h1>
     <section>
         <h3 class="my-20 text-2xl max-w-xl mx-auto text-site-secondary font-cursive">Connect with ESL teachers looking for a school like yours.</h3>
@@ -26,6 +26,7 @@
         <p class="max-w-lg text-lg text-site-secondary my-8 mx-auto">
         If your school could use our service, leave your email below for further information.
         </p>
+        <email-signup url="/test-yes"></email-signup>
     </section>
 </section>
 @endsection

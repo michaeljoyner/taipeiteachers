@@ -1,0 +1,19 @@
+.fadeDownIn-enter-active,
+.fadeDownIn-leave-active {
+  transition: 0.5s;
+}
+.fadeDownIn-enter,
+.fadeDownIn-leave-to {
+  opacity: 0;
+  transform: translate3d(0, -50px, 0);
+}
+
+.fadeInFromLeft-enter-active,
+.fadeInFromLeft-leave-active {
+  transition: 0.7s ease-in-out;
+}
+.fadeInFromLeft-enter,
+.fadeInFromLeft-leave-to {
+  opacity: 0;
+  transform: translate3d(-200px, 0, 0);
+}
