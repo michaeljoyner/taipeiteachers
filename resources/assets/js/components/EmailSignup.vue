@@ -1,5 +1,5 @@
 <template>
-    <div class="h-64 px-4 md:px-12 py-8 max-w-md w-full mx-auto rounded bg-white flex flex-col justify-center items-center">
+    <div class="h-64 px-2 md:px-12 py-8 max-w-md w-full mx-auto rounded bg-white flex flex-col justify-center items-center">
         <form action=""
         class="w-full"
         @submit.prevent="signup"
@@ -13,7 +13,7 @@
                 >
                 <button type="submit"
                         :class="{'opacity-50': waiting}"
-                        class="h-12 w-32 bg-site-primary border-t border-b border-r rounded-tr-full rounded-br-full border-site-primary text-white px-4">
+                        class="h-12 w-24 md:w-32 bg-site-primary border-t border-b border-r rounded-tr-full rounded-br-full border-site-primary text-white px-4">
                     <span v-show="!waiting">Signup</span>
                     <span v-show="waiting" class="bouncy flex justify-center">
                         <div class="w-2 h-2 mx-1 bg-white rounded-full"></div>
