@@ -7,7 +7,7 @@
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">Get onto the Taipei Teacher's mailing list for free and the jobs will find you instead.</p>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">Yoou choose where you ant to work, set a minimum salary you'd accept, and list which kind of teaching suits you. When opportuninty knocks you'll be the first to know.</p>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">Available soon to teachers in Taipei and New Taipei City.</p>
-        <email-signup url="/test-yes" class="shadow absolute pin-b overlap-b">
+        <email-signup url="/test-yes" class="shadow absolute pin-b overlap-b px-4">
         
         </email-signup>
         
