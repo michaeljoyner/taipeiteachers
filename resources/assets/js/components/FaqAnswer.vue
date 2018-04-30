@@ -14,7 +14,7 @@
                         </div>
 
                         <h3 class="mb-20 opacity-0 riseup an-del-25 max-w-large mx-auto text-center text-3xl font-cursive">{{ question }}</h3>
-                        <p class="opacity-0 riseup an-del-50 max-w-md mx-auto">{{ fullAnswer }}</p>
+                        <div class="opacity-0 riseup an-del-50 max-w-md mx-auto" v-html="fullAnswer"></div>
                     </div>
                 </div>
             </transition>
