@@ -12,8 +12,11 @@ if (token) {
 }
 
 window.Vue = require("vue");
+import PortalVue from "portal-vue";
+Vue.use(PortalVue);
 
 Vue.component("email-signup", require("./components/EmailSignup"));
+Vue.component("faq-answer", require("./components/FaqAnswer"));
 
 window.eventHub = new Vue();
 

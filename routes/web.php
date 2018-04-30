@@ -27,7 +27,8 @@ Route::view('/', 'front.home.page');
 Route::view('/new-teachers', 'front.new-teachers.page');
 Route::view('/experienced-teachers', 'front.old-teachers.page');
 Route::view('/schools', 'front.schools.page');
-Route::view('/faqs', 'front.faqs.page');
+Route::get('/faqs', 'FaqsController@index');
+Route::get('/faqs/{slug}', 'FaqsController@show');
 
 
 
@@ -52,6 +53,18 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
 
         Route::post('schools/{school}/image', 'SchoolImageController@store');
         Route::delete('schools/{school}/image', 'SchoolImageController@delete');
+
+        Route::get('faqs', 'FaqsController@index');
+        Route::get('faqs/{faq}', 'FaqsController@show');
+        Route::post('faqs', 'FaqsController@store');
+        Route::post('faqs/{faq}', 'FaqsController@update');
+        Route::delete('faqs/{faq}', 'FaqsController@delete');
+
+        Route::post('published-faqs', 'PublishedFaqsController@store');
+        Route::delete('published-faqs/{faq}', 'PublishedFaqsController@delete');
+
+        Route::get('faqs/{faq}/full-answer/edit', 'FaqFullAnswerController@edit');
+        Route::post('faqs/{faq}/full-answer', 'FaqFullAnswerController@update');
 
     });
 

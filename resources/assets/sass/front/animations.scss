@@ -1,3 +1,19 @@
+.an-del-25 {
+  animation-delay: .25s;
+}
+
+.an-del-50 {
+  animation-delay: .5s;
+}
+
+.an-del-75 {
+  animation-delay: .75s;
+}
+
+.an-del-100 {
+  animation-delay: 1s;
+}
+
 .bouncy {
   & > div {
     animation-name: bouncy;
@@ -8,12 +24,26 @@
   }
 }
 
+.riseup {
+  animation-name: riseUp;
+  animation-duration: .5s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
 .shakey {
   animation-name: shakey;
   animation-duration: 0.4s;
   animation-direction: alternate;
   animation-iteration-count: 3;
   animation-timing-function: linear;
+}
+
+@keyframes riseUp {
+  from {transform: translate3d(0,30px, 0); opacity: 0;}
+  to {transform: translate3d(0,0, 0); opacity: 1;}
 }
 
 @keyframes bouncy {

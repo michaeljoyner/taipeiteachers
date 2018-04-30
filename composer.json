@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=7.1.0",
+        "cviebrock/eloquent-sluggable": "^4.5",
         "dymantic/secretary": "^0.1.2",
         "fideloper/proxy": "~4.0",
         "guzzlehttp/guzzle": "^6.3",

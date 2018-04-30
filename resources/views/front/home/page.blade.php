@@ -1,7 +1,7 @@
 @extends('front.base', ['pageName' => 'leading-normal'])
 
 @section('content')
-    <section class="bg-site-secondary px-4 pt-28 py-40 relative px-4 md:px-0">
+    <section class="bg-site-secondary px-4 pt-28 py-40 relative px-4 md:px-0 antialiased">
         <h1 class="text-5xl max-w-xl mx-auto text-white font-cursive">Start a better job next semester.</h1>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">Dont wait until you're having a bad day to check the job boards. In fact, don't check the job borads at all.</p>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">Get onto the Taipei Teacher's mailing list for free and the jobs will find you instead.</p>
