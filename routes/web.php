@@ -29,7 +29,7 @@ Route::view('/experienced-teachers', 'front.old-teachers.page');
 Route::view('/schools', 'front.schools.page');
 Route::get('/faqs', 'FaqsController@index');
 Route::get('/faqs/{slug}', 'FaqsController@show');
-
+Route::view('/info', 'front.info.page');
 
 
 $this->get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');

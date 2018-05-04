@@ -17,6 +17,7 @@ Vue.use(PortalVue);
 
 Vue.component("email-signup", require("./components/EmailSignup"));
 Vue.component("faq-answer", require("./components/FaqAnswer"));
+Vue.component("hero-title", require("./components/HeroTitle"));
 
 window.eventHub = new Vue();
 
