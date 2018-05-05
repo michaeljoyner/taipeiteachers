@@ -28,8 +28,11 @@ Route::view('/new-teachers', 'front.new-teachers.page');
 Route::view('/experienced-teachers', 'front.old-teachers.page');
 Route::view('/schools', 'front.schools.page');
 Route::get('/faqs', 'FaqsController@index');
+Route::view('/ask-a-teacher', 'front.ask-us.page');
 Route::get('/faqs/{slug}', 'FaqsController@show');
 Route::view('/info', 'front.info.page');
+Route::view('/blog', 'front.blog.index');
+Route::view('/blog-post', 'front.blog.show');
 
 
 $this->get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');

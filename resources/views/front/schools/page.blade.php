@@ -1,10 +1,10 @@
 @extends('front.base')
 
 @section('content')
-<section class="pb-28 pt-40 px-4 md:px-0">
-    <h1 class="text-4xl max-w-xl mx-auto text-site-secondary font-cursive">Find the right teacher for your school</h1>
+<section class="pb-28 pt-20 px-4 md:px-0">
+    <h1 class="text-4xl max-w-lg mx-auto text-site-secondary font-cursive">Find the right teacher for your school</h1>
     <section>
-        <h3 class="my-20 text-2xl max-w-xl mx-auto text-site-secondary font-cursive">Connect with ESL teachers looking for a school like yours.</h3>
+        <h3 class="my-20 text-2xl max-w-lg mx-auto text-site-primary font-cursive">Connect with ESL teachers looking for a school like yours.</h3>
         <p class="max-w-lg text-lg text-site-secondary mt-12 mx-auto">
         Taipeiteachers.com is working on growing mailing list of foreigner teachers in Taipei who are interested in teaching ESL. We’ll also be asking teachers what kind of teaching they prefer, where in Taipei they would like to work, what salary they are looking for and what hours they are available.
         </p>

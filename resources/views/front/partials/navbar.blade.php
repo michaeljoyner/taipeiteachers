@@ -12,26 +12,29 @@
             <div class="dropdown bg-site-secondary md:bg-white p-2 pl-12 md:p-4 md:shadow rounded">
                 <div class="my-4 pb-0 md:pb-4">
                     <a href="/new-teachers" class="no-underline">
-                        <p class="tracking-normal text-white md:text-site-secondary font-cursive font-bold">New Teachers</p>
+                        <p class="tracking-normal text-white md:text-site-primary font-cursive font-bold">New Teachers</p>
                         <p class="hidden md:block text-sm text-grey-darkest mt-1">First time teaching ESL? We have just what you need.</p>
                     </a>
                 </div>
                 <div class="my-4">
                     <a href="/experienced-teachers" class="no-underline">
-                        <p class="tracking-normal text-white md:text-site-secondary font-cursive font-bold">Experienced Teachers</p>
+                        <p class="tracking-normal text-white md:text-site-primary font-cursive font-bold">Experienced Teachers</p>
                         <p class="hidden md:block text-sm text-grey-darkest mt-1">Not your first rodeo? Go straight to the goods.</p>
                     </a>
                 </div>
             </div>
         </li>
         <li class="mb-6 md:mb-0">
-            <a href="/schools" class="no-underline text-white md:text-site-secondary font-bold mx-4 text-lg">Schools</a>
+            <a href="/faqs" class="no-underline  text-white md:text-site-secondary font-bold mx-4 text-lg">FAQs</a>
         </li>
         <li class="mb-6 md:mb-0">
-            <a href="/faqs" class="no-underline  text-white md:text-site-secondary font-bold mx-4 text-lg">Faqs</a>
+            <a href="/ask-a-teacher" class="no-underline text-white md:text-site-secondary font-bold mx-4 text-lg">Ask Us</a>
         </li>
         <li class="mb-6 md:mb-0">
-            <a href="#" class="no-underline  text-white md:text-site-secondary font-bold mx-4 text-lg">Info</a>
+            <a href="/info" class="no-underline  text-white md:text-site-secondary font-bold mx-4 text-lg">Links</a>
+        </li>
+        <li class="mb-6 md:mb-0">
+            <a href="/blog" class="no-underline  text-white md:text-site-secondary font-bold mx-4 text-lg">Blog</a>
         </li>
     </ul>
     <label for="nav-trigger" class="block md:hidden  text-white md:text-site-secondary">

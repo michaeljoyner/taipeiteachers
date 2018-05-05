@@ -8,12 +8,13 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ mix('css/fapp.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('head')
 </head>
-<body  class="{{ $pageName ?? '' }} font-sans leading-normal flex flex-col min-h-100 pt-12">
+<body  class="{{ $pageName ?? '' }} font-sans text-site-secondary leading-normal flex flex-col min-h-100 pt-12">
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
@@ -22,9 +23,7 @@
     @yield('content')
 
 </div>
-<footer class="h-64 bg-site-secondary flex justify-center items-center">
-    <p class="text-lg md:text-5xl text-site-primary font-black">taipeiteachers.com</p>
-</footer>
+@include('front.partials.footer')
 
 <script src="{{ mix('js/fapp.js') }}"></script>
 @yield('bodyscripts')
