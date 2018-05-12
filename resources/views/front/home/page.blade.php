@@ -13,7 +13,7 @@
         
     </section>
     <section class="pt-40 pb-28 bg-site-other">
-        <h3 class="text-3xl font-cursive mt-8 mb-4 max-w-lg mx-auto text-white">Who are we and what is our goal?</h3>
+        <h3 class="text-3xl font-cursive mt-8 mb-4 max-w-lg mx-auto text-white">Who are we?</h3>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">We're a group of teachers who have been living and teaching in Taiwan for many a great year. Our goal is to help dedicated, experienced teachers find better jobs while using our experience in Taiwan to arm new teachers with the knowledge they need to find their first teaching job in Taipei.</p>
     </section>
     @include('front.home.new-teachers')

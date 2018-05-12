@@ -22,6 +22,12 @@
 
 @tailwind utilities;
 
+.absolute-center {
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%,-50%,0);
+}
+
 .overlap-b {
   transform: translate3d(-50%, 50%, 0);
   left: 50%;

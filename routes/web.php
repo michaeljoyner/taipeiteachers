@@ -34,6 +34,8 @@ Route::view('/info', 'front.info.page');
 Route::view('/blog', 'front.blog.index');
 Route::view('/blog-post', 'front.blog.show');
 
+Route::view('/pdf', 'front.pdf');
+
 
 $this->get('admin/login', 'Auth\LoginController@showLoginForm')->name('login');
 $this->post('admin/login', 'Auth\LoginController@login');
@@ -68,6 +70,12 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
 
         Route::get('faqs/{faq}/full-answer/edit', 'FaqFullAnswerController@edit');
         Route::post('faqs/{faq}/full-answer', 'FaqFullAnswerController@update');
+
+        Route::get('info-links', 'InfoLinksController@index');
+        Route::get('info-links/{info_link}', 'InfoLinksController@show');
+        Route::post('info-links', 'InfoLinksController@store');
+        Route::post('info-links/{info_link}', 'InfoLinksController@update');
+        Route::delete('info-links/{info_link}', 'InfoLinksController@delete');
 
     });
 

@@ -1,0 +1,6 @@
+<section class="py-28 px-4 md:px-0">
+    <div class="max-w-lg mx-auto">
+        <h1 class="text-4xl mb-16 max-w-lg mx-auto text-site-secondary font-cursive">What kind of teaching suits you?</h1>
+        <p class="text-xl my-6">There are many kinds of English teaching jobs you can choose from in Taiwan, each with their own pros and cons. The great part about that is you can pair different types of teaching together to create a schedule and a salary that suits you. If you’re here for a money grab you can teach from 9am to 10pm and make a fantastic salary. If you want to study Chinese in the morning you can take on only afternoon and evening classes. The minimum requirement to get your working visa in Taiwan is 14 hours a week at one particular company/school. Just remember, even if you have an ARC with one job, taking on a second job will require you to get a second work permit. You only need one ARC to legally stay in the country, but you need a separate work permit for each job.</p>
+    </div>
+</section>

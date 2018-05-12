@@ -22,6 +22,10 @@ Vue.component('faq-form', require('./components/FaqForm'));
 Vue.component('faq-page', require('./components/FaqPage'));
 Vue.component('delete-modal', DeleteModal);
 
+Vue.component('info-links-index', require('./components/InfoLinks/InfoLinksIndex'));
+Vue.component('info-link-form', require('./components/InfoLinks/InfoLinkForm'));
+Vue.component('info-link', require('./components/InfoLinks/InfoLink'));
+
 window.eventHub = new Vue();
 
 const app = new Vue({
