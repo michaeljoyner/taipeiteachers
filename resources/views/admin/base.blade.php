@@ -20,12 +20,13 @@
 <div id="app">
     @if(Auth::check())
         @include('admin.partials.navbar')
+        <div class="container max-w-xl px-4 mx-auto">
+            @yield('content')
+        </div>
     @else
-        @include('admin.partials.fake-navbar')
-    @endif
-    <div class="container max-w-xl px-4 mx-auto">
         @yield('content')
-    </div>
+    @endif
+
 </div>
 
 {{--<div class="main-footer"></div>--}}

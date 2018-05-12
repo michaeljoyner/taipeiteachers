@@ -5,7 +5,7 @@
         <h1 class="text-4xl font-sans text-grey-darkest normal">{{ $faq['question'] }}</h1>
         <div class="flex justify-end items-center">
             <a href="/admin/faqs/{{ $faq['id'] }}"
-               class=""
+               class="btn btn-primary"
             >Back to FAQ</a>
         </div>
     </div>

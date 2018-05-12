@@ -11,6 +11,9 @@
                 ></school-form>
                 <delete-modal :delete-url="`/admin/schools/${school.id}`"
                               :resource-name="school.name"
+                              button-classes="btn btn-danger mr-4"
+                              delete-button-classes="btn btn-danger"
+                              cancel-button-classes="btn btn-secondary mr-4"
                 >
                 </delete-modal>
             </div>

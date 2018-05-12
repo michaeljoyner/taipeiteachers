@@ -6,6 +6,9 @@
                 <delete-modal :delete-url="`/admin/faqs/${faqAttributes.id}`"
                               :resource-name="question"
                               @item-deleted="pageDestroyed"
+                              button-classes="btn btn-danger mr-4"
+                              delete-button-classes="btn btn-danger"
+                              cancel-button-classes="btn btn-secondary mr-4"
                 ></delete-modal>
                 <faq-form :url="`/admin/faqs/${faqAttributes.id}`"
                           button-text="Edit"
@@ -26,13 +29,15 @@
             ></toggle-switch>
         </div>
         <div class="p-4 my-8 shadow">
-            <p class="uppercase text-xs text-green font-bold tracking-loose mb-4">Short Answer</p>
-            <p class="text-xl">{{ short_answer }}</p>
+            <p class="uppercase text-xs text-site-secondary font-bold tracking-loose mb-4">Short Answer</p>
+            <p class="leading-normal text-secondary">{{ short_answer }}</p>
         </div>
         <div class="p-4 my-8 shadow">
-            <div class="flex justify-between">
-                <p class="uppercase text-xs text-green font-bold tracking-loose mb-4">Full Answer</p>
-                <a :href="`/admin/faqs/${faqAttributes.id}/full-answer/edit`">Edit</a>
+            <div class="flex justify-between mb-6">
+                <p class="uppercase text-xs text-site-secondary font-bold tracking-loose mb-4">Full Answer</p>
+                <a :href="`/admin/faqs/${faqAttributes.id}/full-answer/edit`"
+                   class="btn btn-secondary"
+                >Edit</a>
             </div>
             <div class="leading-normal" v-html="faqAttributes.full_answer"></div>
         </div>

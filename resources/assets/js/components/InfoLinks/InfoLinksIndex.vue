@@ -11,10 +11,10 @@
             </div>
         </div>
         <div>
-            <div v-for="link in links" class="my-8 shadow p-8"
+            <div v-for="link in links" class="my-8 shadow p-8 relative"
                  :key="link.id">
-                <span class="text-white bg-grey-dark rounded my-4 shadow px-2 py-1 font-bold uppercase tracking-wide text-xs">{{ link.topic }}</span>
-                <p class="mt-4 font-bold"><a class="no-underline text-green" :href="`/admin/info-links/${link.id}`">{{ link.title }}</a></p>
+                <p class="mt-4 font-bold"><a class="no-underline text-site-secondary hover:text-site-other text-xl" :href="`/admin/info-links/${link.id}`">{{ link.title }}</a></p>
+                <span class="absolute pin-t pin-r mr-6 text-white bg-site-other rounded my-4 shadow px-2 py-1 font-bold uppercase tracking-wide text-xs">{{ link.topic }}</span>
                 <p class="my-4">{{ link.content }}</p>
                 <a class="text-grey-dark font-bold text-sm my-4" :href="link.link">{{ link.link_text }}</a>
             </div>

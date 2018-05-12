@@ -1,20 +1,25 @@
 <template>
     <span>
-        <button @click="showForm = true">{{ buttonText}}</button>
+        <button @click="showForm = true" class="btn btn-primary">
+            {{ buttonText}}
+        </button>
         <modal :show="showForm">
+            <div slot="header"></div>
             <div slot="body" class="p-4">
-                <h3>Frequently Asked Question</h3>
                 <vue-form :url="url"
                           action=""
                           :form-attributes="formModel"
                           @submission-okay="faqPersisted"
+                          class="max-w-sm mx-auto"
+                          button-classes="btn btn-primary ml-4"
                 >
                     <div slot="form-body"
                          slot-scope="{formData, formErrors}"
                     >
+                        <h3 class="text-site-secondary pb-4 border-b-2 border-site-other">Frequently Asked Question</h3>
                         <div class="form-group my-3"
                              :class="{'has-error': formErrors.question}">
-                            <label class="text-sm uppercase text-green font-bold"
+                            <label class="text-sm text-site-secondary font-bold"
                                    for="question">Question</label>
                             <span class="text-xs text-red"
                                   v-show="formErrors.question">{{ formErrors.question }}</span>
@@ -26,7 +31,7 @@
                         </div>
                         <div class="form-group my-3"
                              :class="{'has-error': formErrors.short_answer}">
-                            <label class="text-sm uppercase text-green font-bold"
+                            <label class="text-sm text-site-secondary font-bold"
                                    for="short_answer">Short answer</label>
                             <span class="text-xs text-red"
                                   v-show="formErrors.short_answer">{{ formErrors.short_answer }}</span>
@@ -39,10 +44,13 @@
                     </div>
                     <div slot="form-button-row">
                         <button type="button"
-                                @click="showForm = false">Cancel</button>
+                                class="btn btn-secondary"
+                                @click="showForm = false"
+                        >Cancel</button>
                     </div>
                 </vue-form>
             </div>
+            <div slot="footer"></div>
         </modal>
     </span>
 </template>

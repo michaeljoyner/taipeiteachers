@@ -6,15 +6,18 @@
                 <faq-form url="/admin/faqs" :form-model="blank_form" button-text="Add Faq" @faq-persisted="resetForm"></faq-form>
             </div>
         </div>
-        <div>
+        <div class="flex flex-wrap justify-around">
             <div v-for="faq in faqs_list"
                  :key="faq.id"
-                 class="p-4 my-8 shadow border-t-4 max-w-md mx-auto"
-                 :class="{'border-green-light': faq.published, 'border-grey-dark': !faq.published}">
-                <a :href="`/admin/faqs/${faq.id}`" class="no-underline text-grey-darkest">
-                    <h3 class="mb-3">{{ faq.question }}</h3>
-                </a>
-                <p class="mb-4">{{ faq.short_answer }}</p>
+                 class="my-8 shadow w-2/5 max-w-md mx-auto rounded"
+                 >
+                <div :class="{'bg-site-other': faq.published, 'bg-grey-dark': !faq.published}" class="p-4 h-32 flex items-center rounded-t">
+                    <a :href="`/admin/faqs/${faq.id}`" class="no-underline text-white hover:text-site-secondary">
+                        <h3 class="mb-3">{{ faq.question }}</h3>
+                    </a>
+                </div>
+
+                <p class="p-4 mb-4 text-sm leading-normal">{{ faq.short_answer }}</p>
             </div>
         </div>
     </div>

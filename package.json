@@ -23,7 +23,7 @@
         "@dymantic/imagineer": "^0.1.0",
         "@dymantic/trix-vue-wysiwyg": "^0.1.0",
         "@dymantic/vue-forms": "^0.2.5",
-        "@dymantic/vuetilities": "^0.3.1",
+        "@dymantic/vuetilities": "^0.3.2",
         "geolib": "^2.0.24",
         "hex-rgb": "^3.0.0",
         "js-marker-clusterer": "^1.0.0",

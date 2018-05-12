@@ -1,6 +1,6 @@
 <template>
     <span>
-        <button class="btn uppercase text-sm text-green border-2 px-2 py-1 border-green"
+        <button class="btn btn-primary"
                 @click="modalOpen = true">{{ buttonText }}</button>
         <modal :show="modalOpen">
             <div slot="header"></div>

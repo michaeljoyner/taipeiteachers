@@ -1,6 +1,42 @@
 
 @tailwind preflight;
 
+.btn {
+  @apply .no-underline .py-2 px-2 .text-center .uppercase .tracking-wide font-bold text-xs shadow .rounded;
+}
+
+.btn-block {
+  @apply .w-64 .block .mx-auto;
+}
+
+.btn-primary {
+  @apply .text-white .bg-site-secondary;
+
+  &:hover, &:focus {
+    @apply .text-white .bg-site-other;
+  }
+}
+
+.btn-danger {
+  @apply .text-white .bg-red-light;
+
+  &:hover, &:focus {
+    @apply .text-white .bg-red;
+  }
+}
+
+.btn-secondary {
+  @apply .text-site-primary .bg-white;
+
+  &:hover, &:focus {
+    @apply .text-white .bg-site-primary;
+  }
+}
+
+.btn-white {
+  @apply .text-white .border-2 .border-white;
+}
+
 @tailwind utilities;
 
 @import "misc";
