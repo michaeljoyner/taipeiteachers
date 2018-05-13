@@ -26,6 +26,7 @@
                            :post-body="{faq_id: faqAttributes.id}"
                            @toggle-switched-on="published = true"
                            @toggle-switched-off="published = false"
+                           class="text-site-other"
             ></toggle-switch>
         </div>
         <div class="p-4 my-8 shadow">
