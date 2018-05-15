@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c1d0932175dfc9251016130ba6bd14e0",
-    "content-hash": "506307704ea58704372f8bc1cc9e1ae1",
+    "hash": "c2f04ffdde1a10452ea297f85097e7aa",
+    "content-hash": "53bc6538bd9d2d3ae077ec93485e0230",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -337,6 +337,58 @@
                 "schedule"
             ],
             "time": "2017-10-12 15:59:13"
+        },
+        {
+            "name": "dymantic/articles",
+            "version": "v0.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dymantic/articles.git",
+                "reference": "38937f5b3d128cbf0b77d9ce9b530b58ca02920d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dymantic/articles/zipball/38937f5b3d128cbf0b77d9ce9b530b58ca02920d",
+                "reference": "38937f5b3d128cbf0b77d9ce9b530b58ca02920d",
+                "shasum": ""
+            },
+            "require": {
+                "cviebrock/eloquent-sluggable": "^4.3",
+                "illuminate/database": "^5.5.0",
+                "illuminate/queue": "^5.5.0",
+                "illuminate/support": "^5.5.0",
+                "php": "^7.0",
+                "spatie/laravel-medialibrary": "^6.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.5",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dymantic\\Articles\\ArticlesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dymantic\\Articles\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Joyner",
+                    "email": "joyner.michael@gmail.com"
+                }
+            ],
+            "description": "Laravel article model and associated stuff for reuse in our projects",
+            "time": "2018-05-15 03:44:32"
         },
         {
             "name": "dymantic/secretary",

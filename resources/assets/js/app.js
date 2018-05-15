@@ -26,6 +26,11 @@ Vue.component('info-links-index', require('./components/InfoLinks/InfoLinksIndex
 Vue.component('info-link-form', require('./components/InfoLinks/InfoLinkForm'));
 Vue.component('info-link', require('./components/InfoLinks/InfoLink'));
 
+Vue.component('articles-index', require('./components/Articles/ArticleIndex'));
+Vue.component('article-form', require('./components/Articles/ArticleForm'));
+Vue.component('article-page', require('./components/Articles/ArticlePage'));
+Vue.component('article-publisher', require('./components/Articles/ArticlePublisher'));
+
 window.eventHub = new Vue();
 
 const app = new Vue({

@@ -8,6 +8,8 @@
         <a class="border-l border-site-other h-12  pl-4 flex items-center font-bold uppercase tracking-wide text-sm hover:text-white text-site-other no-underline"
            href="/admin/info-links">Hot Tips</a>
         <a class="border-l border-site-other h-12  pl-4 flex items-center font-bold uppercase tracking-wide text-sm hover:text-white text-site-other no-underline mx-3"
+           href="/admin/articles">Blog</a>
+        <a class="border-l border-site-other h-12  pl-4 flex items-center font-bold uppercase tracking-wide text-sm hover:text-white text-site-other no-underline mx-3"
            href="/admin/schools">Schools</a>
         @include('auth.logout')
     </nav>
