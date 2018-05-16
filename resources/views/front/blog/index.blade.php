@@ -12,7 +12,7 @@
     </section>
     <section>
         <div class="max-w-lg mx-auto">
-            @foreach(range(1,3) as $item)
+            @foreach($articles as $article)
                 @include('front.blog.preview')
             @endforeach
         </div>

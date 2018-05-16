@@ -31,8 +31,9 @@ Route::get('/faqs', 'FaqsController@index');
 Route::view('/ask-a-teacher', 'front.ask-us.page');
 Route::get('/faqs/{slug}', 'FaqsController@show');
 Route::view('/info', 'front.info.page');
-Route::view('/blog', 'front.blog.index');
-Route::view('/blog-post', 'front.blog.show');
+
+Route::get('blog', 'BlogController@index');
+Route::get('blog/{slug}', 'BlogController@show');
 
 Route::view('/pdf', 'front.pdf');
 
