@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="bg-site-secondary px-4 pt-28 py-40 relative px-4 md:px-0 antialiased">
-        <h1 class="text-5xl max-w-lg mx-auto text-white font-cursive">Welcome to Taipei Teachers.</h1>
+        <h1 class="text-5xl max-w-lg mx-auto text-white font-cursive">Welcome to Taipei Feachers.</h1>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">We help teachers in Taipei find great ESL jobs without charging a dime.</p>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">Choose where in Taipei you want to work, set the minimum salary you’d accept, and list the kinds of teaching that suit you. When the right job comes in, you’ll be the first to know. </p>
         <p class="text-xl mt-8 mb-4 max-w-lg mx-auto text-white">Sign up for free to hear about job opportunities you don't want to miss.</p>

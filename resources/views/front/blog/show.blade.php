@@ -11,5 +11,4 @@
             {!! $article['body'] !!}
         </div>
     </section>
-
 @endsection
