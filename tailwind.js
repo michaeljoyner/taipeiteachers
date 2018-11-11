@@ -226,7 +226,7 @@ module.exports = {
             "Courier New",
             "monospace"
         ],
-        cursive: ["Poppins", "sans-serif"]
+        cursive: ["Rubik", "Poppins", "sans-serif"]
     },
 
     /*
@@ -257,7 +257,8 @@ module.exports = {
         "2xl": "1.5rem", // 24px
         "3xl": "1.875rem", // 30px
         "4xl": "2.25rem", // 36px
-        "5xl": "3rem" // 48px
+        "5xl": "3rem", // 48px
+        "huge": "5rem"
     },
 
     /*

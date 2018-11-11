@@ -15,7 +15,7 @@
         There may not be a job opening better than your current job right now, but if one does become available we’d like to tell you about it. We’ll also tell you who to contact and what time to call. 
         </p>
         <p class="max-w-lg text-lg text-site-secondary my-8 mx-auto">
-        Tell us what you want from a job (location, salary, age group) and we’ll send you a direct mail when a job opening matches what you’re looking for. Whether you take it, ignore it, or pass it on to a friend is totally up to you. It’s simply just a heads
+        Tell us what you want from a job (location, salary, age group) and we’ll send you a direct mail when a job opening matches what you’re looking for. Whether you take it, ignore it, or pass it on to a friend is totally up to you. It’s simply just a heads up.
         </p>
         <p class="max-w-lg text-lg text-site-secondary my-8 mx-auto">
         No payments, no job boards, no hassle. Just a little buzz in your pocket when opportunity knocks.

@@ -8,7 +8,7 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ mix('css/fapp.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:700|Rubik:400,500" rel="stylesheet">
 
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
