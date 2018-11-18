@@ -41,7 +41,8 @@ svg {
 
 .popup {
   animation-name: popUp;
-  animation-duration: .3s;
+  animation-duration: .5s;
+  animation-delay: .5s;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   animation-fill-mode: both;
 }
@@ -49,21 +50,21 @@ svg {
 .growout {
   animation-name: growOut;
   animation-duration: .4s;
+  animation-delay: .2s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
   transform-origin: left;
-  animation-delay: 1.2s;
 }
 
 .del-1 {
-  animation-delay: .3s;
+  animation-delay: 1s;
 }
 
 .del-2 {
-  animation-delay: .6s;
+  animation-delay: 1.5s;
 }
 .del-3 {
-  animation-delay: .9s;
+  animation-delay: 2s;
 }
 
 @keyframes popUp {
