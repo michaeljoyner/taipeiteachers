@@ -5,7 +5,7 @@
         @submit.prevent="signup"
         v-show="!complete"
         >
-            <p class="text-center text-xl mb-12">Sign up to be informed when we launch</p>
+            <p class="text-center text-sm text-grey-dark mb-12">Sign up to be informed when we launch</p>
             <div class="rounded-full flex items-center" :class="{'shakey border border-red': error}">
                 <input type="email"
                         class="pl-2 flex-1 h-12 rounded-bl-full rounded-tl-full border-t border-b border-l border-site-primary"

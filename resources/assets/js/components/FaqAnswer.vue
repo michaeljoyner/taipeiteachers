@@ -1,5 +1,5 @@
 <template>
-    <div class="px-4 lg:px-0 mb-20 py-4 border-t-4 border-site-primary">
+    <div class="px-4 lg:px-0 mb-20 py-4 border-t-2 border-grey">
         <h3 class="font-cursive">{{ question }}</h3>
         <p class=" py-4">{{ shortAnswer }}</p>
         <div class="flex justify-center">
@@ -13,7 +13,7 @@
                             </button>
                         </div>
                         <h3 class="mb-20 opacity-0 riseup an-del-25 max-w-md mx-auto text-3xl font-cursive">{{ question }}</h3>
-                        <div class="opacity-0 riseup an-del-50 max-w-md mx-auto" v-html="fullAnswer"></div>
+                        <div class="opacity-0 riseup an-del-50 max-w-md mx-auto pb-12" v-html="fullAnswer"></div>
                     </div>
                 </div>
             </transition>

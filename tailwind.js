@@ -45,7 +45,7 @@ var defaultConfig = require("tailwindcss/defaultConfig")();
 var colors = {
     transparent: "transparent",
 
-    "site-primary": "#D23b6a",
+    "site-primary": "#DC143C",//"#D23b6a",
     "site-secondary": "#225E73",
     "site-other": "#17a99b",
 

@@ -2,9 +2,9 @@
 
 @section('content')
     <div class="pb-28 pt-20 px-4 md:px-0">
-        <h1 class="text-4xl max-w-lg mx-auto text-site-secondary font-cursive">Frequently Asked Questions</h1>
+        <h1 class="text-2xl md:text-4xl max-w-lg mx-auto text-site-secondary font-cursive">Frequently Asked Questions</h1>
         <section>
-            <h3 class="my-20 text-2xl max-w-lg mx-auto text-site-secondary font-cursive">
+            <h3 class="my-20 text-xl md:text-2xl max-w-lg mx-auto text-site-secondary font-cursive">
                 Common questions answered by those with real experience.
             </h3>
             <p class="max-w-lg text-lg text-site-secondary mt-12 mx-auto">

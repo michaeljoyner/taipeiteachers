@@ -1,4 +1,4 @@
-<article class="my-12">
+<article class="my-12 px-4">
     <h3 class="font-cursive text-xl">
         <a href="/blog/{{ $article->slug }}" class="text-site-secondary no-underline border-b-2 border-site-primary">{{ $article->title }}</a>
     </h3>

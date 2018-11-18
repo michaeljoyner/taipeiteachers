@@ -1,4 +1,4 @@
-<div class="fixed pin-t w-full bg-white z-40 pin-t flex justify-between items-center h-12 border-b-2 border-site-secondary px-4">
+<div class="fixed pin-t w-full bg-white z-40 pin-t flex justify-between items-center h-16 md:h-12 border-b-2 border-site-secondary px-4">
     <div class="">
         <a href="/" class="no-underline text-site-secondary text-lg font-bold">TaipeiTeachers</a>
     </div>

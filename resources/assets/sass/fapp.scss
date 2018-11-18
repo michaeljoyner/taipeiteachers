@@ -39,41 +39,9 @@ svg {
   fill: currentColor;
 }
 
-.popup {
-  animation-name: popUp;
-  animation-duration: .5s;
-  animation-delay: .5s;
-  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation-fill-mode: both;
-}
 
-.growout {
-  animation-name: growOut;
-  animation-duration: .4s;
-  animation-delay: .2s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  transform-origin: left;
-}
 
-.del-1 {
-  animation-delay: 1s;
-}
 
-.del-2 {
-  animation-delay: 1.5s;
-}
-.del-3 {
-  animation-delay: 2s;
-}
 
-@keyframes popUp {
-  from {opacity: 0; transform: translate3d(20px, 20px, 20px)}
-  to {opacity: 1; transform: translate3d(0, 0, 0) }
-}
 
-@keyframes growOut {
-  from {transform: scale(0, 1);}
-  to {transform: scale(1, 1);}
-}
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="fixed pin-t w-full bg-white z-40 pin-t flex justify-between items-center h-12 border-b-2 border-site-primary px-4">
+    <div class="fixed pin-t w-full bg-white z-40 pin-t flex justify-between items-center h-16 md:h-12 border-b-2 border-site-primary px-4">
         <div class="">
             <a href="/" class="no-underline text-site-secondary font-bold text-lg font-cursive">TaipeiTeachers</a>
         </div>

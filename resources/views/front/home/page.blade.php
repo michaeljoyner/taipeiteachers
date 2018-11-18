@@ -3,7 +3,7 @@
 @section('content')
     <section class="homepage-banner px-4 py-12 md:py-28 relative px-4 md:px-0">
         <div class="max-w-md mx-auto">
-            <h1 class="text-4xl md:text-huge max-w-lg mx-auto text-grey-darkest font-cursive">Taipei Teachers</h1>
+            <h1 class="text-4xl md:text-5xl lg:text-huge max-w-lg mx-auto text-grey-darkest font-cursive">Taipei Teachers</h1>
             <div class="h-2 w-64 bg-site-primary rounded growout"></div>
             <p class="text-xl mt-2 mb-12 max-w-lg mx-auto font-bold text-grey">Find the right ESL job for you.</p>
         </div>

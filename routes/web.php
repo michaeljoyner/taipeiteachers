@@ -30,7 +30,7 @@ Route::view('/schools', 'front.schools.page');
 Route::get('/faqs', 'FaqsController@index');
 Route::view('/ask-a-teacher', 'front.ask-us.page');
 Route::get('/faqs/{slug}', 'FaqsController@show');
-Route::view('/info', 'front.info.page');
+Route::get('/info', 'InfoLinksController@index');
 
 Route::get('blog', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@show');
