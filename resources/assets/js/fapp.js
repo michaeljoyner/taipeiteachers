@@ -15,9 +15,9 @@ window.Vue = require("vue");
 import PortalVue from "portal-vue";
 Vue.use(PortalVue);
 
+Vue.component("nav-bar", require("./components/NavBar"));
 Vue.component("email-signup", require("./components/EmailSignup"));
 Vue.component("faq-answer", require("./components/FaqAnswer"));
-Vue.component("hero-title", require("./components/HeroTitle"));
 
 window.eventHub = new Vue();
 

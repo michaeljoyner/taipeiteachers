@@ -33,25 +33,7 @@
   left: 50%;
 }
 
-.has-dropdown {
-  position: relative;
-  .dropdown {
-    position: absolute;
-    transition: 0.3s;
-    width: 250px;
-    top: 100%;
-    left: 50%;
-    transform-origin: top;
-    transform: translateX(-50%) rotateX(90deg);
-  }
 
-  &:hover {
-    .dropdown {
-      z-index: 50;
-      transform: translateX(-50%) rotateX(0deg);
-    }
-  }
-}
 
 svg {
   fill: currentColor;
@@ -60,7 +42,7 @@ svg {
 .popup {
   animation-name: popUp;
   animation-duration: .5s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
   animation-fill-mode: both;
 }
 
