@@ -8,7 +8,7 @@ use App\Schools\School;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
-use Spatie\MediaLibrary\Media;
+use Spatie\MediaLibrary\Models\Media;
 use Tests\TestCase;
 
 class SchoolImageTest extends TestCase

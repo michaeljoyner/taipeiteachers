@@ -14,7 +14,7 @@ class CreateFaqTest extends TestCase
      */
     public function a_faq_can_be_created()
     {
-        $this->disableExceptionHandling();
+        $this->withoutExceptionHandling();
 
         $faq_data = [
             'question' => 'Test Question',
